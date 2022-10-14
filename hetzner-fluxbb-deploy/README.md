@@ -3,7 +3,7 @@
 This repo contains a Terraform Module for how to deploy a [FluxBB](https://fluxbb.org/) instance on the
 [Hetzner](https://www.hetzner.com/) using [Terraform](https://www.terraform.io/).
 
-__FluxDB__, is designed as a lighter, faster alternative to some of the traditional feature heavy forum applications. It is easy to use and has a proven track record of stability and security making it an ideal choice of forum for your website.
+__FluxBB__, is designed as a lighter, faster alternative to some of the traditional feature heavy forum applications. It is easy to use and has a proven track record of stability and security making it an ideal choice of forum for your website.
 
 ## What's a Terraform Module?
 
@@ -39,10 +39,10 @@ is a Terraform Module and contains many "submodules" which can be composed toget
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | hcloud_api_token | API key for hetzner. | `string` | `""` | yes |
-| hcloud_location | The name of the location to deploy the faasd into. | `string` | `""` | yes |
+| hcloud_location | The name of the location to deploy the FluxBB into. | `string` | `""` | yes |
 | hcloud_image | The name is to set the os_type. | `string` | `""` | yes |
 | hcloud_server_type | The server type to use for the server. | `string` | `""` | yes |
-| hcloud_name | The name of the fluxbb instance. | `string` | `""` | yes |
+| hcloud_name | The name of the fluxBB instance. | `string` | `""` | yes |
 | ssh_pub_key | Public Key Pair to use for the instance. | `string` | `""` | yes |
 | user | 	Set the instance user name. | `string` | `""` | yes |
 | private_key | Set the private key value for the instance from the hostmachine | `string` | `""` | yes |
@@ -50,6 +50,6 @@ is a Terraform Module and contains many "submodules" which can be composed toget
 
 | Name | Description |
 |------|-------------|
-| gateway\_url | The url of the faasd gateway |
-| ipv4\_address | The public IP address of the fluxbb instance |
+| gateway\_url | The url of the FluxBB gateway |
+| ipv4\_address | The public IP address of the fluxBB instance |
 
