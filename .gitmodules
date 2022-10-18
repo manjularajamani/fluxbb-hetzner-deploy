@@ -1,0 +1,4 @@
+[submodule "ansible-role-fluxbb"]
+	path = ansible-role-fluxbb
+	url = https://github.com/manjularajamani/ansible-role-fluxbb
+	branch = main
